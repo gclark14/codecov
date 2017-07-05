@@ -3,7 +3,7 @@ codecov:
 
 codecov:
   notify:
-    require_ci_to_pass: yes
+    require_ci_to_pass: no
 
 # target: { auto | number } where auto will use the coverage from the base commit
 # (pull request base or parent commit) coverage to compare against and number

@@ -14,7 +14,7 @@ coverage:
     project:
     # basic
     target: 15%
-    threshold: null #Allow the coverage to drop by x%
+    threshold: 0% #Allow the coverage to drop by x%
     base: auto
     # advanced
     branches: null

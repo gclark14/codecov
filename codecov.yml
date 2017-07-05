@@ -14,7 +14,7 @@ coverage:
     project:
     # basic
     target: 15%
-    threshold: null #Allow the coverage to drop by x%
+    threshold: 1% #Allow the coverage to drop by x%
     base: auto
     # advanced
 
@@ -32,5 +32,5 @@ comment:
   require_changes: no
   require_changes: false  # if true: only post the comment if coverage changes
    require_base: no        # [yes :: must have a base report to post]
-   require_head: no       # [yes :: must have a head report to post]
+   require_head: yes # [yes :: must have a head report to post]
    branches: null

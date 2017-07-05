@@ -15,8 +15,8 @@ coverage:
     patch: yes
     changes: no
     # basic
-    target: 15%
-    threshold: 15% #Allow the coverage to drop by x%
+    target: 50%
+    threshold: 5% #Allow the coverage to drop by x%
     base: auto
     # advanced
 

@@ -11,7 +11,9 @@ codecov:
 #
 coverage:
   status:
-    project:
+    project: yes
+    patch: yes
+    changes: no
     # basic
     target: 15%
     threshold: 1% #Allow the coverage to drop by x%

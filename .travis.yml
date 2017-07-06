@@ -8,7 +8,7 @@ before_script:
 
 script:
   - ./gradlew check
-  - ./gradlew codeCoverageReport
+  - ./gradlew jacocoTestReport
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t e2b47562-00fa-42dc-bd34-fe2aa306e559

@@ -15,4 +15,9 @@ public class AdderTest {
     public void add_should_return_sum_given_two_integers(){
         assertThat(adder.add(2,2), is(4));
     }
+
+    @Test
+    public void add_should_return_sum_given_two_doubles(){
+        assertThat(adder.add(1.5,1.5), is(3.0));
+    }
 }

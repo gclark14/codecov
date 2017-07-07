@@ -1,38 +1,7 @@
-codecov:
-  branch: master
-
-codecov:
-  notify:
-    require_ci_to_pass: yes
-
-# target: { auto | number } where auto will use the coverage from the base commit
-# (pull request base or parent commit) coverage to compare against and number
-# is the specified target of exact coverage i.e. 75%, 100%, 90%
-#
 coverage:
   status:
-    project: yes
-    patch: yes
-    changes: no
-    # basic
-    target: 50%
-    threshold: .5% #Allow the coverage to drop by x%
-    base: auto
-    # advanced
-
-parsers:
-  gcov:
-    branch_detection:
-      conditional: yes
-      loop: yes
-      method: no
-      macro: no
-
-comment:
-  layout: "reach, diff, flags, files, footer"
-  behavior: default
-  require_changes: no
-  require_changes: false  # if true: only post the comment if coverage changes
-   require_base: no        # [yes :: must have a base report to post]
-   require_head: yes # [yes :: must have a head report to post]
-   branches: null
+    project:
+      default:
+        target: 50%
+        threshold: .5%  # Allow the coverage to drop by x%
+        base: auto
